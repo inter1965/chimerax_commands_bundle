@@ -88,7 +88,7 @@ A collection of commands including "to residue", "previous residue", "next resid
 
 Start by making an atomic selection with ctrl+click/drag or with the select command. If multiple residues are selected each command first goes to the first residue of the selection (except "last residue"). Then when a single residue is selected the commands can be used to move to the next residue in the chain or to skip to the beginning or end of the chain. The center of rotation (cofr) is set to the selected residue. A button is provided to reset the cofr for all models in the scene. 
 
-The button panel can be moved into the top bar of ChimeraX. Right click the panel and select "Save tool position" to save the location for future sessions. If you don't want the button panel, comment out the body of the `initialize()` function in `src/chimerax_custom_functions/to_residue.py` before installing the bundle.
+The button panel can be moved into the top bar of ChimeraX. Right click the panel and select "Save tool position" to save the location for future sessions. If you don't want the button panel, comment out the body of the `initialize()` function in `src/to_residue.py` before installing the bundle.
 
 ## reload scripts 
 Reload all the scripts above. This is useful if you edit the scripts themselves and want chimeraX to load the new version without restarting the whole program. It will reload all startup commands (see installation below).
