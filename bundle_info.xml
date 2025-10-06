@@ -6,6 +6,7 @@
     <Synopsis>Collection of Bowden group ChimeraX helper commands.</Synopsis>
     <Description>Implements the custom ChimeraX commands published by the Bowden group, including soft mask tools, fitting helpers, residue navigation shortcuts, and other utilities.</Description>
     <Categories>
+      <Category name="Commands"/>
       <Category name="Utilities"/>
     </Categories>
     <Dependencies>
