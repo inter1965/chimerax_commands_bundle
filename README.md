@@ -1,7 +1,7 @@
 # Custom ChimeraX functions
 Commands to add extra functionality to ChimeraX.  
 
-Installation instructions can be found at the end of this file.  
+Installation instructions can be found at the end of this file.
 Written by Robert Stass, Bowden group, STRUBI/OPIC (2025)
 
 ## soft edge mask
@@ -88,7 +88,7 @@ A collection of commands including "to residue", "previous residue", "next resid
 
 Start by making an atomic selection with ctrl+click/drag or with the select command. If multiple residues are selected each command first goes to the first residue of the selection (except "last residue"). Then when a single residue is selected the commands can be used to move to the next residue in the chain or to skip to the beginning or end of the chain. The center of rotation (cofr) is set to the selected residue. A button is provided to reset the cofr for all models in the scene. 
 
-The button panel can be moved into the top bar of ChimeraX. Right click the panel and select "Save tool position" to save the location for future sessions. If you don't want the button panel, comment out the call to create_button_panel() at the end of the chimerax_to_residue.py script. 
+The button panel can be moved into the top bar of ChimeraX. Right click the panel and select "Save tool position" to save the location for future sessions. If you don't want the button panel, comment out the body of the `initialize()` function in `src/to_residue.py` before installing the bundle.
 
 ## reload scripts 
 Reload all the scripts above. This is useful if you edit the scripts themselves and want chimeraX to load the new version without restarting the whole program. It will reload all startup commands (see installation below).
@@ -96,10 +96,12 @@ Reload all the scripts above. This is useful if you edit the scripts themselves 
 reload scripts
 ```
 ## Installation
-Download the git repository. Open ChimeraX and go to Favourites -> Settings -> Startup.  
-Add the following to the "Execute these commands at startup" box:  
-```
-open <full path to>/chimerax_custom_functions.cxc  
-```
-where `<full path to>` is the full path to the repository location.  
-Then restart chimeraX.
+1. Download this repository and note its location on disk.
+2. Open ChimeraX and run the command:
+   ```
+   devel install <full path to>/chimerax_commands_bundle
+   ```
+   replacing `<full path to>` with the folder that contains this README.
+3. Restart ChimeraX. The bundle will register all of the commands documented above, and the residue shortcut panel will be created automatically during startup.
+
+To update an existing installation, pull the latest changes in this repository and repeat the `devel install` command.
