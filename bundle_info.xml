@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<ChimeraXBundle xmlns="http://www.cgl.ucsf.edu/chimerax/xml/chimerax_bundle" version="1">
+  <BundleInfo name="ChimeraX-CustomFunctions" version="1.0" package="chimerax_custom_functions" minSessionVersion="1" maxSessionVersion="1">
+    <Author>Robert Stass, Bowden Group, STRUBI/OPIC</Author>
+    <Email>chimerax@cgl.ucsf.edu</Email>
+    <Synopsis>Collection of Bowden group ChimeraX helper commands.</Synopsis>
+    <Description>Implements the custom ChimeraX commands published by the Bowden group, including soft mask tools, fitting helpers, residue navigation shortcuts, and other utilities.</Description>
+    <Categories>
+      <Category name="Utilities"/>
+    </Categories>
+    <Dependencies>
+      <Dependency name="ChimeraX-Core" version="~=1.1"/>
+    </Dependencies>
+    <Classifiers>
+      <PythonClassifier>Development Status :: 4 - Beta</PythonClassifier>
+      <PythonClassifier>License :: Freeware</PythonClassifier>
+      <ChimeraXClassifier>ChimeraX :: Command :: soft edge mask :: Volume editing :: Apply a soft edge to a mask</ChimeraXClassifier>
+      <ChimeraXClassifier>ChimeraX :: Command :: molmap cube :: Volume editing :: Create a cubic molmap</ChimeraXClassifier>
+      <ChimeraXClassifier>ChimeraX :: Command :: align center :: Model manipulation :: Align model centers</ChimeraXClassifier>
+      <ChimeraXClassifier>ChimeraX :: Command :: rough fitmap :: Fitting :: Rough fit atomic models in maps</ChimeraXClassifier>
+      <ChimeraXClassifier>ChimeraX :: Command :: fit opposite hand :: Fitting :: Fit models into opposite hand maps</ChimeraXClassifier>
+      <ChimeraXClassifier>ChimeraX :: Command :: map eraser mask create :: Volume editing :: Build map eraser based masks</ChimeraXClassifier>
+      <ChimeraXClassifier>ChimeraX :: Command :: align symmetry axis :: Model manipulation :: Align cyclic symmetry axes</ChimeraXClassifier>
+      <ChimeraXClassifier>ChimeraX :: Command :: to residue :: Analysis :: Report current residue</ChimeraXClassifier>
+      <ChimeraXClassifier>ChimeraX :: Command :: next residue :: Analysis :: Step to next residue</ChimeraXClassifier>
+      <ChimeraXClassifier>ChimeraX :: Command :: previous residue :: Analysis :: Step to previous residue</ChimeraXClassifier>
+      <ChimeraXClassifier>ChimeraX :: Command :: first residue :: Analysis :: Jump to first residue</ChimeraXClassifier>
+      <ChimeraXClassifier>ChimeraX :: Command :: last residue :: Analysis :: Jump to last residue</ChimeraXClassifier>
+      <ChimeraXClassifier>ChimeraX :: Command :: reload scripts :: Utilities :: Reload startup commands</ChimeraXClassifier>
+    </Classifiers>
+  </BundleInfo>
+</ChimeraXBundle>
