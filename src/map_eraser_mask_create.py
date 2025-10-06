@@ -6,10 +6,27 @@ import os
 
 
 def _first_map(mask_arg):
-    maps = mask_arg[0] if hasattr(mask_arg, "__iter__") else [mask_arg]
-    if not maps:
+    try:  # pragma: no cover - ChimeraX dependency
+        from chimerax.core.models import Model
+    except Exception:  # pragma: no cover - ChimeraX dependency
+        Model = ()
+
+    if isinstance(mask_arg, Model):
+        first_map = mask_arg
+    else:
+        try:
+            iterator = iter(mask_arg)
+        except TypeError:
+            first_map = mask_arg
+        else:
+            for first_map in iterator:
+                break
+            else:
+                raise ValueError("No map supplied")
+
+    if first_map is None:
         raise ValueError("No map supplied")
-    return maps[0]
+    return first_map
 
 
 def map_eraser_mask_create(
