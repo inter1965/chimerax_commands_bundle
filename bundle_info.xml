@@ -2,6 +2,7 @@
 <BundleInfo name="ChimeraX-CustomFunctions" version="1.0" package="chimerax_custom_functions" minSessionVersion="1" maxSessionVersion="1">
   <Author>Robert Stass, Bowden Group, STRUBI/OPIC</Author>
   <Email>chimerax@cgl.ucsf.edu</Email>
+  <URL>https://github.com/BowdenLab/chimerax_commands_bundle</URL>
   <Synopsis>Collection of Bowden group ChimeraX helper commands.</Synopsis>
   <Description>Implements the custom ChimeraX commands published by the Bowden group, including soft mask tools, fitting helpers, residue navigation shortcuts, and other utilities.</Description>
   <Categories>
